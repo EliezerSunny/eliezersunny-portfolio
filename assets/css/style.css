@@ -472,7 +472,7 @@ ol {
 
 /* # About */
 .about-area {
-    padding-top: 80px;
+    padding-top: 20px;
 }
 .about-area .about-me-box {
     position: relative;
@@ -643,7 +643,7 @@ ol {
 
 /* # Project */
 .projects-area {
-    padding-top: 65px;
+    padding-top: 20px;
 }
 .projects-area .container > .section-heading {
     display: none;
@@ -835,7 +835,7 @@ ol {
 
 /* # Credentials */
 .credential-area {
-    padding-top: 80px;
+    padding-top: 20px;
 }
 .credential-area .gx-row {
     gap: 80px;
@@ -999,7 +999,7 @@ ol {
 
 /* # Service */
 .service-area {
-    padding-top: 87px;
+    padding-top: 20px;
 }
 .service-area .container > .section-heading {
     display: none;
@@ -1069,7 +1069,7 @@ ol {
 
 /* # Blog */
 .blog-area {
-    padding-top: 130px;
+    padding-top: 20px;
 }
 .blog-sidebar .blog-sidebar-inner .blog-sidebar-widget {
     margin-bottom: 40px;
@@ -1194,7 +1194,7 @@ ol {
 
 
 .blog-details-area {
-    padding-top: 130px;
+    padding-top: 20px;
 }
 .blog-details-area .blog-details-content {
     padding-right: 85px;
@@ -1318,7 +1318,7 @@ ol {
 
 /* # Contact */
 .contact-area {
-    padding-top: 80px;
+    padding-top: 20px;
 }
 .contact-area .contact-form {
     position: relative;
@@ -1452,11 +1452,11 @@ ol {
 
 /* # Footer */
 .footer-area {
-    padding-top: 128px;
-    padding-bottom: 78px;
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
 .main-workspage .footer-area {
-    padding-top: 104px;
+    padding-top: 40px;
 }
 .footer-area .footer-content .logo {
     display: inline-block;
@@ -1465,7 +1465,7 @@ ol {
     display: block;
 }
 .footer-area .footer-content .footer-menu {
-    margin: 33px 0 37px 0;
+    margin: 20px 0 20px 0;
     padding: 0;
     display: flex;
     align-items: center;

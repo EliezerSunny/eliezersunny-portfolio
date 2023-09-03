@@ -28,7 +28,7 @@ var div = document.createElement("div");
 
 
 document.getElementById("year").innerHTML = new Date().getFullYear();
-
+document.getElementById("year2").innerHTML = new Date().getFullYear();
 
 
 //Contact form
