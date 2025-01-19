@@ -11,8 +11,7 @@
     {
       "source": "/contact",
       "destination": "/contact.html"
-    }
-
+    },
     {
       "source": "/projects",
       "destination": "/projects.html"
@@ -20,7 +19,7 @@
     {
       "source": "/credentials",
       "destination": "/credentials.html"
-    },
+    }
 
 
   ]
