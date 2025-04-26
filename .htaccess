@@ -12,14 +12,5 @@ RewriteEngine on
 # Rewrite for index.html
   RewriteRule ^index?$ index.html [NC,L]
 
-  # Rewrite for about.html
-  RewriteRule ^about?$ about.html [NC,L]
-
-  # Rewrite for projects.html
-  RewriteRule ^projects?$ projects.html [NC,L]
-
-  # Rewrite for contact.html
-  RewriteRule ^contact?$ contact.html [NC,L]
-
-  # Rewrite for credentials.html
-  RewriteRule ^credentials?$ credentials.html [NC,L]
+  # Rewrite for all-projects.html
+  RewriteRule ^all-projects?$ all-projects.html [NC,L]

@@ -6,6 +6,5 @@
 
 ## My projects
 * [![Portfolio](https://img.shields.io/twitter/url?url=https%3A%2F%2FEliezerSunny.github.io%2Feliezersunny-portfolio%2F&style=badge&logo=None&label=Eliezer%20Sunny%20portfolio&color=%23565656)](https://EliezerSunny.github.io/eliezersunny-portfolio/)
-* Still updating some of my old projects. incase you notice some errors in any of my projects, especially my web design projects.
-* I will be designing new webpage on my old projects.
+* Still updating some of my old projects. incase you notice some errors in any of my project.
 * Feel free to contact me for any *web design/development* with the latest features.

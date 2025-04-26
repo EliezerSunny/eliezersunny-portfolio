@@ -5,20 +5,8 @@
       "destination": "/index.html"
     },
     {
-      "source": "/about",
-      "destination": "/about.html"
-    },
-    {
-      "source": "/contact",
-      "destination": "/contact.html"
-    },
-    {
-      "source": "/projects",
-      "destination": "/projects.html"
-    },
-    {
-      "source": "/credentials",
-      "destination": "/credentials.html"
+      "source": "/all-projects",
+      "destination": "/all-projects.html"
     }
 
 
