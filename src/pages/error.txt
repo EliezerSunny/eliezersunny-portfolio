@@ -1,0 +1,178 @@
+import { useOutletContext, Link } from 'react-router-dom';
+import React, { useState, useEffect, useRef } from 'react';
+import { Menu, X, ShoppingCart, CheckCircle, Ban, ShoppingBag, Heart, Plus, Minus, Trash2, Phone, MapPin, Mail, Facebook, MessageCircle, Instagram, Twitter, Sun, Moon, Star, ChevronDown, ChevronLeft, ChevronRight } from 'lucide-react';
+
+const Project = () => {
+  
+
+const projects = [
+
+    {
+      id: 1,
+      name: "EliezerSunny Project",
+      brand: "EliezerSunny", // new
+      category: "Web",
+    //   price: 15000,
+    //   originalPrice: 20000, // new
+      images: ["/img/sunnyy.jpeg"],
+      description: "Web Development",
+      rating: 5.0,
+      reviews: 9,
+    },
+
+    
+
+
+  ];
+
+  const categories = [
+    {
+      id: 1,
+      category: "Web Development",
+      icon: Shirt,
+    },
+    
+    
+  ];
+
+
+
+  return (
+    <div >
+
+      {/* Project Section */}
+      <section className="portfolio-area page-section scroll-to-page" id="portfolio">
+                    <div className="custom-container">
+                        <div className="portfolio-content content-width">
+                            <div className="section-header">
+                                <h4 className="subtitle scroll-animation" data-animation="fade_from_bottom">
+                                    <i className="las la-grip-vertical"></i> portfolio
+                                </h4>
+                                <h1 className="scroll-animation" data-animation="fade_from_bottom">Featured <span>Projects</span></h1>
+                            </div>
+        
+                            
+                            <div className="row portfolio-items">
+
+                                {projects.map(project => (
+                                <div key={project.id} className="col-md-12 scroll-animation" data-animation="fade_from_bottom">
+                                    <div className="portfolio-item portfolio-full">
+                                        <div className="portfolio-item-inner">
+                                            <a href="/images/portfolio1.jpg" data-lightbox="example-1">
+                                                <img src="/images/portfolio1.jpg" alt="Portfolio" />
+                                            </a>
+        
+                                            <ul className="portfolio-categories">
+                                                <li>
+                                                    <a href="#">Figma</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Framer</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">{project.name}</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <h2><a href="#">Bureau - Architecture Studio Website</a></h2>
+                                    </div>
+                                </div>
+        
+                                // <div className="col-md-6 scroll-animation" data-animation="fade_from_left">
+                                //     <div className="portfolio-item portfolio-half">
+                                //         <div className="portfolio-item-inner">
+                                //             <a href="/images/portfolio2.jpg" data-lightbox="example-1">
+                                //                 <img src="/images/portfolio2.jpg" alt="Portfolio" />
+                                //             </a>
+
+                                //             <img src="/images/portfolio2.jpg"  alt="Portfolio" />
+        
+                                //             <ul className="portfolio-categories">
+                                //                 <li>
+                                //                     <a href="#">WordPress</a>
+                                //                 </li>
+                                //                 <li>
+                                //                     <a href="#">Larevel/PHP</a>
+                                //                 </li>
+                                //             </ul>
+                                //         </div>
+                                //         <h2><a href="#">Moonex WordPress Theme</a></h2>
+                                //     </div>
+                                // </div>
+        
+                                // <div className="col-md-6 scroll-animation" data-animation="fade_from_right">
+                                //     <div className="portfolio-item portfolio-half">
+                                //         <div className="portfolio-item-inner">
+                                //             <a href="/images/portfolio3.jpg" data-lightbox="example-1">
+                                //                 <img src="/images/portfolio3.jpg" alt="Portfolio" />
+                                //             </a>
+        
+                                //             <ul className="portfolio-categories">
+                                //                 <li>
+                                //                     <a href="#">Figma</a>
+                                //                 </li>
+                                //                 <li>
+                                //                     <a href="#">Webflow</a>
+                                //                 </li>
+                                //             </ul>
+                                //         </div>
+                                //         <h2><a href="#">Taskly Dashboard</a></h2>
+                                //     </div>
+                                // </div>
+        
+                                // <div className="col-md-12 scroll-animation" data-animation="fade_from_bottom">
+                                //     <div className="portfolio-item portfolio-half">
+                                //         <div className="portfolio-item-inner">
+                                //             <a href="/images/portfolio4.jpg" data-lightbox="example-1">
+                                //                 <img src="/images/portfolio4.jpg" alt="Portfolio" />
+                                //             </a>
+        
+                                //             <ul className="portfolio-categories">
+                                //                 <li>
+                                //                     <a href="#">Figma</a>
+                                //                 </li>
+                                //                 <li>
+                                //                     <a href="#">React</a>
+                                //                 </li>
+                                //             </ul>
+                                //         </div>
+                                //         <h2><a href="#">Hinterland - Real Estate Site Redesign</a></h2>
+                                //     </div>
+                                // </div>
+        
+                                // <div className="col-md-12 scroll-animation" data-animation="fade_from_bottom">
+                                //     <div className="portfolio-item portfolio-half">
+                                //         <div className="portfolio-item-inner">
+                                //             <a href="/images/portfolio5.jpg" data-lightbox="example-1">
+                                //                 <img src="/images/portfolio5.jpg" alt="Portfolio" />
+                                //             </a>
+        
+                                //             <ul className="portfolio-categories">
+                                //                 <li>
+                                //                     <a href="#">Framer</a>
+                                //                 </li>
+                                //             </ul>
+                                //         </div>
+                                //         <h2><a href="#">Lewis Portfolio Framer Template</a></h2>
+                                //     </div>
+                                // </div>
+                                ))}
+
+                            </div>
+                            
+        
+                        </div>
+                    </div>
+                </section>
+
+
+
+      
+
+      {/* Project */}
+      
+    </div>
+  );
+};
+
+export default Project;

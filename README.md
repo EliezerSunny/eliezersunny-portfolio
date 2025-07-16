@@ -1,10 +1,12 @@
-# My portfolio @EliezerSunny
+# React + Vite
 
-* Let's connect
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-[![X](https://img.shields.io/twitter/url?url=https%3A%2F%2Ftwitter.com%2Feliezersunny)](https://twitter.com/eliezersunny) [![WhatsApp](https://img.shields.io/twitter/url?url=https%3A%2F%2Fwa.me%2F2348149028042&style=Social&logo=WhatsApp&label=WhatsApp&labelColor=%23075E54&color=%23075E54)](https://wa.me/2348149028042) [![Thread](https://img.shields.io/twitter/url?url=https%3A%2F%2Fwww.threads.net%2F%40dev_sunny_e&logo=%40&label=%40%20Tread)](https://www.threads.net/@dev_sunny_e)  [![Portfolio](https://img.shields.io/twitter/url?url=https%3A%2F%2FEliezerSunny.github.io%2Feliezersunny-portfolio%2F&style=badge&logo=None&label=Eliezer%20Sunny%20portfolio&color=%23565656)](https://EliezerSunny.github.io/eliezersunny-portfolio/)
+Currently, two official plugins are available:
 
-## My projects
-* [![Portfolio](https://img.shields.io/twitter/url?url=https%3A%2F%2FEliezerSunny.github.io%2Feliezersunny-portfolio%2F&style=badge&logo=None&label=Eliezer%20Sunny%20portfolio&color=%23565656)](https://EliezerSunny.github.io/eliezersunny-portfolio/)
-* Still updating some of my old projects. incase you notice some errors in any of my project.
-* Feel free to contact me for any *web design/development* with the latest features.
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
+## Expanding the ESLint configuration
+
+If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
