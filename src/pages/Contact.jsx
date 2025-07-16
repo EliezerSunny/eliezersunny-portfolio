@@ -3,22 +3,36 @@ import React, { useState } from 'react';
 
 // import { useOutletContext } from 'react-router-dom';
 
+
+//Contact form
+
+const messages = document.getElementById('success');
+       
+        
+
+const Form = () => {
+    // const messages = document.getElementById('success');
+
+    const email = document.getElementById("email").value;
+    const subject = document.getElementById("subject").value;
+    const message = document.getElementById("message").value;
+    const name = document.getElementById("full-name").value;
+
+    if (name != "" && subject != "" && email != "" && message != ""){
+        document.getElementById('success').innerHTML = "Your message was sent successfully.!";
+        messages.classList.add("alert-success");
+        // messages.style.color = "#013220";
+        return true;
+         
+    }
+
+    
+}
+
+
 const Contact = () => {
   
 
-// const {
-//   projects,
-//   activeCategory,
-//   setActiveCategory,
-//   filteredProjects,
-//   currentImageIndex,
-//   nextImage,
-//   prevImage,
-//   darkMode,
-//   sortBy,
-//   setSortBy,
-//   LazyImage
-// } = useOutletContext();
 
 
   return (
@@ -32,7 +46,7 @@ const Contact = () => {
                                 <h4 className="subtitle scroll-animation" data-animation="fade_from_bottom">
                                     <i className="las la-dollar-sign"></i> contact
                                 </h4>
-                                <h1 className="scroll-animation" data-animation="fade_from_bottom">Let's Work <span>Together!</span></h1>
+                                <h1 className="scroll-animation" data-animation="fade_from_bottom">🚀 Let’s Build Something <span>Together!</span></h1>
                             </div>
 
                             <div className="p-5 border border-gray-200 rounded-4xl">
@@ -40,8 +54,8 @@ const Contact = () => {
                             <p id="required-msg">* Marked fields are required to fill.</p>
 
                             <form className="contact-form scroll-animation" data-animation="fade_from_bottom" id="contactForm" action="https://formsubmit.co/0c41d649d185c4eb3e984815f4c25cf7" onsubmit="myFunction()" name="contactForm" method="POST">
-                                <div className="alert alert-success messenger-box-contact__msg" style={{display: 'none'}} role="alert">
-                                    Your message was sent successfully.
+                                <div className="alert alert-success messenger-box-contact__msg" id='success' style={{display: 'none'}} role="alert">
+                                    
                                 </div>
                                 <div className="row">
                                     <div className="col-md-6">
@@ -70,25 +84,6 @@ const Contact = () => {
                                         </div>
                                     </div>
 
-                                    {/* <div className="col-md-6">
-                                        <div className="input-group">
-                                            <label for="message">Message </label>
-                                            <input type="text" name="message" id="message" placeholder="Message" />
-                                        </div>
-                                    </div> */}
-
-                                    {/* <div className="col-md-6">
-                                        <div className="input-group">
-                                            <label for="subject">subject <sup>*</sup></label>
-                                            <select name="subject" id="subject">
-                                                <option value="">Select a subject</option>
-                                                <option value="subject1">Subject 1</option>
-                                                <option value="subject2">Subject 2</option>
-                                                <option value="subject3">Subject 3</option>
-                                            </select>
-                                        </div>
-                                    </div> */}
-
                                     <div className="col-md-12">
                                         <div className="input-group">
                                             <label for="budget">your budget <span>(optional)</span></label>
@@ -115,7 +110,7 @@ const Contact = () => {
                                     </div>
                                     <div className="col-md-12">
                                         <div className="input-group submit-btn-wrap">
-                                            <button className="theme-btn" name="submit" type="submit" id="submit-form">send message</button>
+                                            <button className="theme-btn" name="submit" type="submit" id="submit-form" onClick={Form}>send message</button>
                                         </div>
                                     </div>
                                 </div>

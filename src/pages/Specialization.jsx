@@ -11,7 +11,7 @@ const Specialization = () => {
     {
       id: 1,
       title: "SoftWare Engineering",
-      details: "I build website go live with Framer, Webflow or WordPress",
+      details: "I apply software engineering principles to design scallable, secure and efficient systems. This includes structuring databases properly, using version control (Git), managing application state, and ensuring data integrity. I also handle system integration, testing, and deployment, making sure everything runs smoothly from development to production",
       category: "SoftWare Engineering",
       projects: "11",
     },
@@ -19,13 +19,12 @@ const Specialization = () => {
 
     {
       id: 2,
-      title: "Web Development",
-      details: "I build website go live with Framer, Webflow or WordPress",
+      title: "SoftWare Development",
+      details: "I develop modern web application using the Laravel framework. From backend logic to frontend design. I build complete system like chat apps, school management system, voting platforms. My focus is on writing clean, maintainable code and creating user-friendly interfaces that work across all devices.",
       category: "Web Development",
       projects: "11",
     },
 
-    
 
 
   ];
@@ -53,7 +52,7 @@ const Specialization = () => {
                                     <i className="las la-bezier-curve"></i>
                                     <h2>{specialization.title}</h2>
                                     <p>{specialization.details}</p>
-                                    <span className="projects">{specialization.projects} Projects</span>
+                                    {/* <span className="projects">{specialization.projects} Projects</span> */}
                                 </div>
                                 ))}
 

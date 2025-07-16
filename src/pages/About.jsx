@@ -11,7 +11,7 @@ const About = () => {
       id: 1,
       firstw: "About",
       secondw: "Me",
-      details: "Since beginning my journey as a freelance designer nearly 8 years ago, I’m a Laravel developer passionate about building clean, scalable, and efficient web applications. I focus on backend development, API integration, real-time features, and database management. I’m committed to delivering high-quality solutions that meet both business goals and user needs.",
+      details: "I'm Eliazer “Süññy” Adetunji, a Laravel developer based in Nigeria. I specialize in building robust and dynamic web platforms that help people and organizations solve real problems. Whether it's a real-time messaging app for churches, an academic portal for schools, or an online voting system, I design and code with both purpose and precision. I’m self-motivated, detail-oriented, and committed to writing clean, maintainable code. I love working on meaningful projects and collaborating with teams that value quality and creativity.",
       category: "About",
     },
     

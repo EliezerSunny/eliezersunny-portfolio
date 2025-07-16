@@ -12,7 +12,7 @@ const Introduction = () => {
       id: 1,
       firstw: "I'm a",
       secondw: "Software Developer",
-      details: "Hi, I’m a Laravel developer with a strong passion for creating powerful and efficient web applications. I specialize in backend development, database design, API integration, and building real-time features. My goal is to deliver clean, secure, and scalable solutions that bring ideas to life.",
+      details: "I’m a Software Developer passionate about turning ideas into real-world solutions — from school management systems and chat apps to voting platforms and music websites. With Laravel as my core stack, I craft clean, functional, and scalable code that delivers results.",
       category: "Introduction",
       years: "4+",
       projects: "11",

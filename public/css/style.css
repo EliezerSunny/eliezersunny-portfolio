@@ -312,8 +312,8 @@ main.drake-main {
     background: #191919;
     height: 100%;
     overflow-x: hidden;
-    padding-top: 50px;
-    margin-right: -250px;
+    padding-top: 25px;
+    margin-right: -50px;
     transition: .3s;
 }
 .responsive-sidebar-menu.active .sidebar-menu-inner {
@@ -335,7 +335,7 @@ main.drake-main {
     background: none;
     border-radius: 0;
     border: none;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 .responsive-sidebar-menu .sidebar-menu-inner .menu-wrap .menu li a {
     display: flex;
@@ -708,7 +708,7 @@ main.drake-main {
 }
 .left-sidebar .social-profile {
     gap: 8px;
-    margin-bottom: 118px;
+    margin-bottom: 8px;
 }
 .left-sidebar .social-profile li a {
     display: block;
@@ -719,7 +719,7 @@ main.drake-main {
     border: 2px solid #565656;
     border-radius: 50%;
     color: #999999;
-    font-size: 20px;
+    font-size: 12px;
     transition: .3s;
 }
 .left-sidebar .social-profile li a:hover {

@@ -10,24 +10,6 @@ import { useOutletContext } from 'react-router-dom';
 const SidebarMenu = () => {
   
 
-// const {
-//   products,
-//   addToCart,
-//   activeCategory,
-//   setActiveCategory,
-//   filteredProducts,
-//   currentImageIndex,
-//   nextImage,
-//   prevImage,
-//   StarRating,
-//   darkMode,
-//   sortBy,
-//   setSortBy,
-//   likes,
-//   toggleLike,
-//   LazyImage
-// } = useOutletContext();
-
 
   return (
     <div >

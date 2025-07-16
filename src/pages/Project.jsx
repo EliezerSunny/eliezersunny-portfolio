@@ -9,14 +9,166 @@ const projects = [
 
     {
       id: 1,
-      title: "Sunny Real ChatApp",
-      organization: "EliezerSunny", // new
+      title: "Sunny Real ChatApp (Private)",
+      organization: "EliezerSunny",
       category: "Web Development",
-      frontend: ["HTML", "CSS", "JavaSript", "ReactJS"],
-      backend: ["Laravel", "PHP"],
-    //   price: 15000,
-    //   originalPrice: 20000, // new
+      link: ["#"],
+      frontend: ["Livewire"],
+      backend: ["Laravel"],
       image: ["/img/projects/chat_page.png"],
+      description: "Web Development",
+      rating: 5.0,
+      reviews: 9,
+    },
+
+
+    {
+      id: 2,
+      title: "Online Voting System",
+      organization: "EliezerSunny",
+      category: "Web Development",
+      link: ["https://EliezerSunny.github.io/Online-Voting-System-Laravel-12/"],
+      frontend: ["Livewire"],
+      backend: ["Laravel"],
+      image: ["/img/projects/voting_page.png"],
+      description: "Web Development",
+      rating: 5.0,
+      reviews: 9,
+    },
+
+
+    {
+      id: 3,
+      title: "Uniabuja Portal",
+      organization: "EliezerSunny",
+      category: "Web Development",
+      link: ["https://EliezerSunny.github.io/University-of-Abuja-School-Management-System-Laravel-Project/"],
+      frontend: ["Livewire"],
+      backend: ["Laravel"],
+      image: ["/img/projects/student_login.png"],
+      description: "Web Development",
+      rating: 5.0,
+      reviews: 9,
+    },
+
+
+    {
+      id: 4,
+      title: "OIM C&S DIVINE HELP (Private)",
+      organization: "EliezerSunny",
+      category: "Web Development",
+      link: ["#"],
+      frontend: ["Livewire"],
+      backend: ["Laravel"],
+      image: ["/img/projects/divine_help1.png"],
+      description: "Web Development",
+      rating: 5.0,
+      reviews: 9,
+    },
+
+
+    {
+      id: 5,
+      title: "MaxBeatx (Private)",
+      organization: "EliezerSunny",
+      category: "Web Development",
+      link: ["#"],
+      frontend: ["Livewire"],
+      backend: ["Laravel"],
+      image: ["/img/projects/maxbeatx.png"],
+      description: "Web Development",
+      rating: 5.0,
+      reviews: 9,
+    },
+
+
+    {
+      id: 6,
+      title: "Chrisron Wear",
+      organization: "EliezerSunny",
+      category: "Web Development",
+      link: ["https://chrisronwearsite.vercel.app/"],
+      frontend: ["React"],
+      backend: [""],
+      image: ["/img/projects/ChrisronWear.png"],
+      description: "Web Development",
+      rating: 5.0,
+      reviews: 9,
+    },
+
+
+    {
+      id: 7,
+      title: "BSS",
+      organization: "EliezerSunny",
+      category: "Web Development",
+      link: ["https://EliezerSunny.github.io/First-laravel-project/"],
+      frontend: ["Livewire"],
+      backend: ["Laravel"],
+      image: ["/img/projects/Bss_login.png"],
+      description: "Web Development",
+      rating: 5.0,
+      reviews: 9,
+    },
+
+
+    {
+      id: 8,
+      title: "Jumia React",
+      organization: "EliezerSunny",
+      category: "Web Development",
+      link: ["https://jumia-react.vercel.app/"],
+      frontend: ["React"],
+      backend: [""],
+      image: ["/img/projects/jumia_react.png"],
+      description: "Web Development",
+      rating: 5.0,
+      reviews: 9,
+    },
+
+
+    {
+      id: 9,
+      title: "Meme Site",
+      organization: "EliezerSunny",
+      category: "Web Development",
+      link: ["https://github.com/EliezerSunny/Meme_site"],
+      frontend: ["Livewire"],
+      backend: ["Laravel"],
+      image: ["/img/projects/meme_site.jpg"],
+      description: "Web Development",
+      rating: 5.0,
+      reviews: 9,
+    },
+
+
+
+
+
+    {
+      id: 10,
+      title: "News Web App",
+      organization: "EliezerSunny",
+      category: "Web Development",
+      link: ["https://github.com/EliezerSunny/News-API-Flask-ALX"],
+      frontend: [""],
+      backend: ["Flask, API"],
+      image: ["/img/projects/news_webapp.jpg"],
+      description: "Web Development",
+      rating: 5.0,
+      reviews: 9,
+    },
+
+
+    {
+      id: 11,
+      title: "Flight Tracker",
+      organization: "EliezerSunny",
+      category: "Web Development",
+      link: ["https://github.com/EliezerSunny/Flight-tracker-vercel"],
+      frontend: [""],
+      backend: ["Flask"],
+      image: ["/img/projects/flight_tracker.jpg"],
       description: "Web Development",
       rating: 5.0,
       reviews: 9,
@@ -57,6 +209,7 @@ const projects = [
                             <div className="row portfolio-items">
 
                                 {projects.map(project => (
+                                  <a href={project.link}>
                                 <div key={project.id} className="col-md-12 scroll-animation" data-animation="fade_from_bottom">
                                     <div className="portfolio-item portfolio-full">
                                         <div className="portfolio-item-inner">
@@ -65,20 +218,25 @@ const projects = [
                                             </a>
         
                                             <ul className="portfolio-categories">
+
+                                              {project.frontend.map(tool => (
                                                 <li>
-                                                    <a href="#">Figma</a>
+                                                    <a href="#" title='Front-End'>{tool}</a>
                                                 </li>
+                                              ))}
+
+                                              {project.backend.map(tool => (
                                                 <li>
-                                                    <a href="#">Framer</a>
+                                                    <a href="#" title='Back-End'>{tool}</a>
                                                 </li>
-                                                <li>
-                                                    <a href="#">{project.title}</a>
-                                                </li>
+                                              ))}
+
                                             </ul>
                                         </div>
-                                        <h2><a href="#">Bureau - Architecture Studio Website</a></h2>
+                                        <h2><a href="#">{project.title}</a></h2>
                                     </div>
                                 </div>
+                                </a>
                                 ))}
 
                             </div>
