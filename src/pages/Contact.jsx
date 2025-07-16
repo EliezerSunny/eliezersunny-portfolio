@@ -50,7 +50,7 @@ const Contact = () => {
                             </div>
 
                             <div className="p-5 border border-gray-200 rounded-4xl">
-                            <h3 className="scroll-animation" data-animation="fade_from_bottom">hello@drake.design</h3>
+                                   
                             <p id="required-msg">* Marked fields are required to fill.</p>
 
                             <form className="contact-form scroll-animation" data-animation="fade_from_bottom" id="contactForm" action="https://formsubmit.co/0c41d649d185c4eb3e984815f4c25cf7" onsubmit="myFunction()" name="contactForm" method="POST">
