@@ -11,7 +11,7 @@ const About = () => {
       id: 1,
       firstw: "About",
       secondw: "Me",
-      details: "I'm Eliazer “Süññy” Adetunji, a Laravel developer based in Nigeria. I specialize in building robust and dynamic web platforms that help people and organizations solve real problems. Whether it's a real-time messaging app for churches, an academic portal for schools, or an online voting system, I design and code with both purpose and precision. I’m self-motivated, detail-oriented, and committed to writing clean, maintainable code. I love working on meaningful projects and collaborating with teams that value quality and creativity.",
+      details: "I'm Eliazer “Süññy” Adetunji, a Laravel developer based in Nigeria. I specialize in building robust and dynamic web platforms that help people and organizations solve real problems. Whether it's a real-time messaging app, business site, an academic portal for schools, or an online voting system, I design and code with both purpose and precision. I’m self-motivated, detail-oriented, and committed to writing clean, maintainable code. I love working on meaningful projects and collaborating with teams that value quality and creativity.",
       category: "About",
     },
     
