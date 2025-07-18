@@ -6,6 +6,7 @@ import React, { useState } from 'react';
 import { Menu, X, Phone, Mail, MapPin, ShoppingBag, Star, Users, User, Award, Truck, Twitter, Linkedin, Facebook, Instagram, Github } from 'lucide-react';
 
 import { useOutletContext } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const SidebarMenu = () => {
   
@@ -82,6 +83,9 @@ const SidebarMenu = () => {
             </li>
             <li>
                 <a href="https://www.github.com/EliezerSunny"><Github /></a>
+            </li>
+            <li>
+                <Link to="/imageresize">.</Link>
             </li>
                 </ul>
             </div>

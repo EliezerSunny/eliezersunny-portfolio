@@ -85,7 +85,7 @@ const Contact = () => {
           <div className="contact-content content-width">
             <div className="section-header">
               <h4 className="subtitle scroll-animation" data-animation="fade_from_bottom">
-                <i className="las la-dollar-sign"></i> contact
+                <i className="las la-envelope"></i> contact
               </h4>
               <h1 className="scroll-animation" data-animation="fade_from_bottom">
                 🚀 Let's Build <span>Something Together!</span>

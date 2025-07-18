@@ -37,6 +37,13 @@ const skills = [
       count: "60%",
     },
 
+    {
+      id: 5,
+      name: "Python",
+      logo: "/images/python.png",
+      count: "73%",
+    },
+
     
 
 
