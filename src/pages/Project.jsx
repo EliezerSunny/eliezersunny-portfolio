@@ -234,7 +234,7 @@ const projects = [
 
                                             </ul>
                                         </div>
-                                        <h2><a href="#portfolio">{project.title}</a></h2>
+                                        <h2><a href={project.link}>{project.title}</a></h2>
                                     </div>
                                     </a>
                                 </div>
