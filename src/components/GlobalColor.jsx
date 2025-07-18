@@ -36,9 +36,9 @@ const GlobalColor = () => {
          {/* GlobalCVideo and Preloadolor Section */}
 
 
-       {/* <video className="body-overlay" muted autoplay loop>
+       <video className="body-overlay" muted autoplay loop>
         <source src="/images/video1.mp4" type="video/mp4" />
-    </video> */}
+    </video>
 
     <div className="page-loader">
         <div className="bounceball"></div>
@@ -59,9 +59,9 @@ const GlobalColor = () => {
 
 
 <div className="global-color">
-        <span className="setting-toggle">
+        {/* <span className="setting-toggle">
             <i className="las la-cog"></i>
-        </span>
+        </span> */}
         <div className="inner">
             <div className="overlay"></div>
             <div className="global-color-option">

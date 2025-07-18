@@ -52,11 +52,11 @@ const SidebarMenu = () => {
                             <i className="las la-grip-vertical"></i> <span>Portfolios</span>
                         </a>
                     </li>
-                    <li>
+                    {/* <li>
                         <a className="scroll-to" href="#testimonial">
                             <i className="lar la-comment"></i> <span>Testimonial</span>
                         </a>
-                    </li>
+                    </li> */}
                     <li>
                         <a className="scroll-to" href="#contact">
                             <i className="las la-envelope"></i> <span>Contact</span>

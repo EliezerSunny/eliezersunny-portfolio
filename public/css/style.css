@@ -299,20 +299,20 @@ main.drake-main {
     position: absolute;
     left: 0;
     top: 0;
-    width: 100%;
+    width: 70%;
     height: 100%;
     z-index: -1;
     background: #565656;
     opacity: 0.5;
 }
 .responsive-sidebar-menu .sidebar-menu-inner {
-    /* max-width: 200px; */
-    width: 50%;
+    max-width: 350px;
+    width: 70%;
     margin-left: auto;
     background: #191919;
     height: 100%;
     overflow-x: hidden;
-    padding-top: 25px;
+    padding-top: 20px;
     margin-right: -50px;
     transition: .3s;
 }
@@ -320,7 +320,7 @@ main.drake-main {
     margin-right: 0;
 }
 .responsive-sidebar-menu .sidebar-menu-inner .menu-wrap {
-    width: 46%;
+    width: 60%;
     margin: auto;
 }
 .responsive-sidebar-menu .sidebar-menu-inner .menu-wrap p {
@@ -369,11 +369,11 @@ main.drake-main {
 }
 .responsive-sidebar-menu .sidebar-menu-inner .global-color-option,
 .responsive-sidebar-menu .sidebar-menu-inner .sidebar-social {
-    width: 50%;
+    width: 60%;
     margin: auto;
 }
 .responsive-sidebar-menu .sidebar-menu-inner .sidebar-social ul {
-    gap: 10px;
+    gap: 15px;
 }
 .responsive-sidebar-menu .sidebar-menu-inner .sidebar-social ul li a {
     color: #999999;
@@ -463,21 +463,21 @@ main.drake-main {
     opacity: 1;
 }
 .global-color .inner .global-color-option {
-    max-width: 1043px;
-    width: 100%;
+    max-width: 500px;
+    width: 70%;
     margin-left: auto;
     background: #191919;
     height: 100%;
     overflow-x: hidden;
-    padding-top: 50px;
-    margin-right: -400px;
+    padding-top: 20px;
+    margin-right: -200px;
     transition: .4s;
-    padding: 134px;
+    padding: 30px;
 }
 .global-color .inner .global-color-option h2 {
     color: #fff;
     font-weight: 200;
-    font-size: 34px;
+    font-size: 20px;
     line-height: 1.2;
     margin-bottom: 80px;
 }
@@ -490,7 +490,7 @@ main.drake-main {
     flex-wrap: wrap;
     gap: 26px;
     margin-bottom: 105px;
-    padding-top: 30px;
+    padding-top: 20px;
 }
 .global-color .global-color-option .color-boxed a {
     display: block;
@@ -664,7 +664,7 @@ main.drake-main {
 /* 06 - Left Sidebar */
 .left-sidebar {
     max-width: 485px;
-    width: 100%;
+    width: 98%;
     border-radius: 30px;
     border: 1px solid #565656;
     position: fixed;
@@ -686,7 +686,7 @@ main.drake-main {
     margin-bottom: 65px;
 }
 .left-sidebar .sidebar-header .designation {
-    max-width: 110px;
+    max-width: 210px;
     text-align: right;
     color: #fff;
     font-size: 14px;
@@ -991,7 +991,7 @@ body .body-overlay {
     margin-bottom: 50px;
 }
 .skills .skill .skill-inner {
-    border: 2px solid #565656;
+    border: 1px solid #565656;
     border-radius: 85px;
     padding: 54px 0 48px 0;
     margin-bottom: 20px;
@@ -1993,3 +1993,8 @@ body .body-overlay {
 .global-color .setting-toggle i {
     animation: rotating 3s infinite linear !important;
 }
+
+
+
+
+

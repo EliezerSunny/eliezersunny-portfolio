@@ -14,11 +14,9 @@ import Education from './pages/Education';
 import Specialization from './pages/Specialization';
 import Skills from './pages/Skills';
 import Project from './pages/Project';
-import Testimonial from './pages/Testimonial';
-import Price from './pages/Price';
+// import Testimonial from './pages/Testimonial';
+// import Price from './pages/Price';
 import Contact from './pages/Contact';
-import Layout from './components/Layout';
-import Home from './pages/Home';
 
 function App() {
   return (

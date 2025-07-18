@@ -46,11 +46,11 @@ const Contact = () => {
                                 <h4 className="subtitle scroll-animation" data-animation="fade_from_bottom">
                                     <i className="las la-dollar-sign"></i> contact
                                 </h4>
-                                <h1 className="scroll-animation" data-animation="fade_from_bottom">🚀 Let’s Build Something <span>Together!</span></h1>
+                                <h1 className="scroll-animation" data-animation="fade_from_bottom">🚀 Let’s Build <span>Something Together!</span></h1>
                             </div>
 
-                            <div className="p-5 border border-gray-200 rounded-4xl">
-                                   
+                            <div className="p-5 border-[0.3px] border-[#565656] rounded-4xl">
+                            <h3 className="scroll-animation" data-animation="fade_from_bottom">eliezersunny@gmail.com</h3>
                             <p id="required-msg">* Marked fields are required to fill.</p>
 
                             <form className="contact-form scroll-animation" data-animation="fade_from_bottom" id="contactForm" action="https://formsubmit.co/0c41d649d185c4eb3e984815f4c25cf7" onsubmit="myFunction()" name="contactForm" method="POST">
@@ -61,13 +61,13 @@ const Contact = () => {
                                     <div className="col-md-6">
                                         <div className="input-group">
                                             <label for="full-name">full Name <sup>*</sup></label>
-                                            <input type="text" name="full-name" id="full-name" placeholder="Your Full Name" />
+                                            <input type="text" name="full-name" id="full-name" placeholder="Your Full Name" required />
                                         </div>
                                     </div>
                                     <div className="col-md-6">
                                         <div className="input-group">
                                             <label for="email">Email <sup>*</sup></label>
-                                            <input type="email" name="email" id="email" placeholder="Your email adress" />
+                                            <input type="email" name="email" id="email" placeholder="Your email adress" required />
                                         </div>
                                     </div>
                                     <div className="col-md-6">
@@ -79,8 +79,8 @@ const Contact = () => {
 
                                     <div className="col-md-6">
                                         <div className="input-group">
-                                            <label for="subject">Subject </label>
-                                            <input type="text" name="subject" id="Subject7" placeholder="Subject" />
+                                            <label for="subject">Subject <sup>*</sup></label>
+                                            <input type="text" name="subject" id="Subject7" placeholder="Subject" required />
                                         </div>
                                     </div>
 
@@ -92,15 +92,15 @@ const Contact = () => {
                                     </div>
                                     <div className="col-md-12">
                                         <div className="input-group">
-                                            <label for="message">message</label>
-                                            <textarea name="message" id="message" placeholder="Wrire your message here ..."></textarea>
+                                            <label for="message">message <sup>*</sup></label>
+                                            <textarea name="message" id="message" placeholder="Wrire your message here ..." required></textarea>
                                         </div>
                                     </div>
                                     <div className="col-md-12">
                                         <div className="input-group upload-attachment">
                                             <div>
                                                 <label for="upload-attachment">
-                                                    <i className="las la-cloud-upload-alt"></i> add an attachment
+                                                    <i className="las la-cloud-upload-alt"></i> add an attachment <span>(optional)</span>
                                                     <input type="file" name="file" id="upload-attachment" />
                                                 </label>
                                                 
@@ -132,3 +132,4 @@ const Contact = () => {
 };
 
 export default Contact;
+

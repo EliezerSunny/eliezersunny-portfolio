@@ -21,7 +21,7 @@ const LeftSidebar = () => {
             <img src="/img/logo.png" alt="Logo" />
             <span className="designation">Software Developer & Engineer</span>
         </div>
-        <img className="me" src="/img/dev_sunny.jpg" alt="Sunny" title='Süññy' />
+        <img className="me" src="/img/sunny3.jpg" alt="Sunny" title='Süññy' />
         <h2 className="name">Süññy</h2>
         <h2 className='copyright'>Software || Developer & Engineer</h2>
         <h2 className="copyright">I build fast, secure, and scalable web applications.</h2>

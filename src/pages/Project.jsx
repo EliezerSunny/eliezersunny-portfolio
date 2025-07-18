@@ -209,34 +209,36 @@ const projects = [
                             <div className="row portfolio-items">
 
                                 {projects.map(project => (
-                                  <a href={project.link}>
+                                  
                                 <div key={project.id} className="col-md-12 scroll-animation" data-animation="fade_from_bottom">
+                                    <a href={project.link} target='_blank'>
                                     <div className="portfolio-item portfolio-full">
                                         <div className="portfolio-item-inner">
-                                            <a href={project.image[0]} data-lightbox="example-1">
-                                                <img src={project.image[0]} alt={project.title} title={project.title} />
+                                            <a href={project.link} data-lightbox="example-1">
+                                                <img src={project.image} alt={project.title} title={project.title} />
                                             </a>
         
                                             <ul className="portfolio-categories">
 
                                               {project.frontend.map(tool => (
                                                 <li>
-                                                    <a href="#" title='Front-End'>{tool}</a>
+                                                    <a href="#portfolio" title='Front-End'>{tool}</a>
                                                 </li>
                                               ))}
 
                                               {project.backend.map(tool => (
                                                 <li>
-                                                    <a href="#" title='Back-End'>{tool}</a>
+                                                    <a href="#portfolio" title='Back-End'>{tool}</a>
                                                 </li>
                                               ))}
 
                                             </ul>
                                         </div>
-                                        <h2><a href="#">{project.title}</a></h2>
+                                        <h2><a href="#portfolio">{project.title}</a></h2>
                                     </div>
+                                    </a>
                                 </div>
-                                </a>
+                                
                                 ))}
 
                             </div>
