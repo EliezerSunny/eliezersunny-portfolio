@@ -12,10 +12,10 @@ const projects = [
       title: "Sunny Real ChatApp (Private)",
       organization: "EliezerSunny",
       category: "Web Development",
-      link: ["#"],
+      link: "#",
       frontend: ["Livewire"],
       backend: ["Laravel"],
-      image: ["/img/projects/chat_page.png"],
+      image: "/img/projects/chat_page.png",
       description: "Web Development",
       rating: 5.0,
       reviews: 9,
@@ -27,10 +27,10 @@ const projects = [
       title: "Online Voting System",
       organization: "EliezerSunny",
       category: "Web Development",
-      link: ["https://EliezerSunny.github.io/Online-Voting-System-Laravel-12/"],
+      link:"https://EliezerSunny.github.io/Online-Voting-System-Laravel-12/",
       frontend: ["Livewire"],
       backend: ["Laravel"],
-      image: ["/img/projects/voting_page.png"],
+      image: "/img/projects/voting_page.png",
       description: "Web Development",
       rating: 5.0,
       reviews: 9,
@@ -42,10 +42,10 @@ const projects = [
       title: "Uniabuja Portal",
       organization: "EliezerSunny",
       category: "Web Development",
-      link: ["https://EliezerSunny.github.io/University-of-Abuja-School-Management-System-Laravel-Project/"],
+      link: "https://EliezerSunny.github.io/University-of-Abuja-School-Management-System-Laravel-Project/",
       frontend: ["Livewire"],
       backend: ["Laravel"],
-      image: ["/img/projects/student_login.png"],
+      image: "/img/projects/student_login.png",
       description: "Web Development",
       rating: 5.0,
       reviews: 9,
@@ -57,10 +57,10 @@ const projects = [
       title: "OIM C&S DIVINE HELP (Private)",
       organization: "EliezerSunny",
       category: "Web Development",
-      link: ["#"],
+      link: "#",
       frontend: ["Livewire"],
       backend: ["Laravel"],
-      image: ["/img/projects/divine_help1.png"],
+      image: "/img/projects/divine_help1.png",
       description: "Web Development",
       rating: 5.0,
       reviews: 9,
@@ -72,10 +72,10 @@ const projects = [
       title: "MaxBeatx (Private)",
       organization: "EliezerSunny",
       category: "Web Development",
-      link: ["#"],
+      link: "#",
       frontend: ["Livewire"],
       backend: ["Laravel"],
-      image: ["/img/projects/maxbeatx.png"],
+      image: "/img/projects/maxbeatx.png",
       description: "Web Development",
       rating: 5.0,
       reviews: 9,
@@ -87,10 +87,10 @@ const projects = [
       title: "Chrisron Wear",
       organization: "EliezerSunny",
       category: "Web Development",
-      link: ["https://chrisronwearsite.vercel.app/"],
+      link: "https://chrisronwearsite.vercel.app/",
       frontend: ["React"],
       backend: [""],
-      image: ["/img/projects/ChrisronWear.png"],
+      image: "/img/projects/ChrisronWear.png",
       description: "Web Development",
       rating: 5.0,
       reviews: 9,
@@ -102,10 +102,10 @@ const projects = [
       title: "BSS",
       organization: "EliezerSunny",
       category: "Web Development",
-      link: ["https://EliezerSunny.github.io/First-laravel-project/"],
+      link: "https://EliezerSunny.github.io/First-laravel-project/",
       frontend: ["Livewire"],
       backend: ["Laravel"],
-      image: ["/img/projects/Bss_login.png"],
+      image: "/img/projects/Bss_login.png",
       description: "Web Development",
       rating: 5.0,
       reviews: 9,
@@ -117,10 +117,10 @@ const projects = [
       title: "Jumia React",
       organization: "EliezerSunny",
       category: "Web Development",
-      link: ["https://jumia-react.vercel.app/"],
+      link: "https://jumia-react.vercel.app/",
       frontend: ["React"],
       backend: [""],
-      image: ["/img/projects/jumia_react.png"],
+      image: "/img/projects/jumia_react.png",
       description: "Web Development",
       rating: 5.0,
       reviews: 9,
@@ -132,10 +132,10 @@ const projects = [
       title: "Meme Site",
       organization: "EliezerSunny",
       category: "Web Development",
-      link: ["https://github.com/EliezerSunny/Meme_site"],
+      link: "https://github.com/EliezerSunny/Meme_site",
       frontend: ["Livewire"],
       backend: ["Laravel"],
-      image: ["/img/projects/meme_site.jpg"],
+      image: "/img/projects/meme_site.jpg",
       description: "Web Development",
       rating: 5.0,
       reviews: 9,
@@ -150,7 +150,7 @@ const projects = [
       title: "News Web App",
       organization: "EliezerSunny",
       category: "Web Development",
-      link: ["https://github.com/EliezerSunny/News-API-Flask-ALX"],
+      link: "https://github.com/EliezerSunny/News-API-Flask-ALX",
       frontend: [""],
       backend: ["Flask, API"],
       image: ["/img/projects/news_webapp.jpg"],
@@ -165,10 +165,10 @@ const projects = [
       title: "Flight Tracker",
       organization: "EliezerSunny",
       category: "Web Development",
-      link: ["https://github.com/EliezerSunny/Flight-tracker-vercel"],
+      link: "https://github.com/EliezerSunny/Flight-tracker-vercel",
       frontend: [""],
       backend: ["Flask"],
-      image: ["/img/projects/flight_tracker.jpg"],
+      image: "/img/projects/flight_tracker.jpg",
       description: "Web Development",
       rating: 5.0,
       reviews: 9,
@@ -219,20 +219,18 @@ const projects = [
                                             </a>
         
                                             <ul className="portfolio-categories">
+                        {project.frontend.map((tool, index) => (
+                            <li key={`frontend-${index}`}>
+                                <a href="#portfolio" title='Front-End'>{tool}</a>
+                            </li>
+                        ))}
 
-                                              {project.frontend.map(tool => (
-                                                <li>
-                                                    <a href="#portfolio" title='Front-End'>{tool}</a>
-                                                </li>
-                                              ))}
-
-                                              {project.backend.map(tool => (
-                                                <li>
-                                                    <a href="#portfolio" title='Back-End'>{tool}</a>
-                                                </li>
-                                              ))}
-
-                                            </ul>
+                        {project.backend.map((tool, index) => (
+                            <li key={`backend-${index}`}>
+                                <a href="#portfolio" title='Back-End'>{tool}</a>
+                            </li>
+                        ))}
+                    </ul>
                                         </div>
                                         <h2><a href={project.link}>{project.title}</a></h2>
                                     </div>
