@@ -11,7 +11,7 @@ const skills = [
     {
       id: 1,
       name: "Tailwind CSS",
-      logo: "/images/tailwindcss2.png",
+      logo: "/images/tailwindcss.png",
       count: "92%",
     },
 
