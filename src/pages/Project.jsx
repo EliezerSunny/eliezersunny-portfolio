@@ -27,7 +27,7 @@ const projects = [
       title: "Online Voting System",
       organization: "EliezerSunny",
       category: "Web Development",
-      link:"https://EliezerSunny.github.io/Online-Voting-System-Laravel-12/",
+      link:"https://github.com/EliezerSunny/Online-Voting-System-Laravel-12/",
       frontend: ["Livewire"],
       backend: ["Laravel"],
       image: "/img/projects/voting_page.png",
