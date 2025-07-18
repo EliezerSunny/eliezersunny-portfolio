@@ -719,7 +719,7 @@ main.drake-main {
     border: 2px solid #565656;
     border-radius: 50%;
     color: #999999;
-    font-size: 12px;
+    font-size: 24px;
     transition: .3s;
 }
 .left-sidebar .social-profile li a:hover {
