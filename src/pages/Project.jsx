@@ -207,18 +207,19 @@ const projects = [
         
                             
                             <div className="row portfolio-items">
+    {projects.map(project => (
+        <div key={project.id} className="col-md-12 scroll-animation" data-animation="fade_from_bottom">
+            <div className="portfolio-item portfolio-full">
+                <div className="portfolio-item-inner">
+                    {project.link !== "#" ? (
+                        <a href={project.link} target='_blank' rel="noopener noreferrer">
+                            <img src={Array.isArray(project.image) ? project.image[0] : project.image} alt={project.title} title={project.title} />
+                        </a>
+                    ) : (
+                        <img src={Array.isArray(project.image) ? project.image[0] : project.image} alt={project.title} title={project.title} />
+                    )}
 
-                                {projects.map(project => (
-                                  
-                                <div key={project.id} className="col-md-12 scroll-animation" data-animation="fade_from_bottom">
-                                    <a href={project.link} target='_blank'>
-                                    <div className="portfolio-item portfolio-full">
-                                        <div className="portfolio-item-inner">
-                                            <a href={project.link} data-lightbox="example-1">
-                                                <img src={project.image} alt={project.title} title={project.title} />
-                                            </a>
-        
-                                            <ul className="portfolio-categories">
+                    <ul className="portfolio-categories">
                         {project.frontend.map((tool, index) => (
                             <li key={`frontend-${index}`}>
                                 <a href="#portfolio" title='Front-End'>{tool}</a>
@@ -231,15 +232,20 @@ const projects = [
                             </li>
                         ))}
                     </ul>
-                                        </div>
-                                        <h2><a href={project.link}>{project.title}</a></h2>
-                                    </div>
-                                    </a>
-                                </div>
-                                
-                                ))}
-
-                            </div>
+                </div>
+                <h2>
+                    {project.link !== "#" ? (
+                        <a href={project.link} target='_blank' rel="noopener noreferrer">
+                            {project.title}
+                        </a>
+                    ) : (
+                        <span>{project.title}</span>
+                    )}
+                </h2>
+            </div>
+        </div>
+    ))}
+</div>
                             
         
                         </div>
