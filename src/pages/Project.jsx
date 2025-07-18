@@ -1,6 +1,6 @@
-import { useOutletContext, Link } from 'react-router-dom';
+
 import React, { useState, useEffect, useRef } from 'react';
-import { Menu, Shirt, X, ShoppingCart, CheckCircle, Ban, ShoppingBag, Heart, Plus, Minus, Trash2, Phone, MapPin, Mail, Facebook, MessageCircle, Instagram, Twitter, Sun, Moon, Star, ChevronDown, ChevronLeft, ChevronRight } from 'lucide-react';
+// import { Menu, Shirt, X, ShoppingCart, CheckCircle, Ban, ShoppingBag, Heart, Plus, Minus, Trash2, Phone, MapPin, Mail, Facebook, MessageCircle, Instagram, Twitter, Sun, Moon, Star, ChevronDown, ChevronLeft, ChevronRight } from 'lucide-react';
 
 const Project = () => {
   
@@ -179,36 +179,48 @@ const projects = [
 
   ];
 
-  const categories = [
-    {
-      id: 1,
-      category: "Web Development",
-      icon: Shirt,
-    },
-    
-    
-  ];
+  const [visible, setVisible] = useState(5);
+  const loadMoreRef = useRef();
 
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      entries => {
+        if (entries[0].isIntersecting && visible < projects.length) {
+          setTimeout(() => {
+            setVisible(prev => Math.min(prev + 5, projects.length));
+          }, 500);
+        }
+      },
+      { threshold: 1 }
+    );
 
+    if (loadMoreRef.current) {
+      observer.observe(loadMoreRef.current);
+    }
+
+    return () => {
+      if (loadMoreRef.current) {
+        observer.unobserve(loadMoreRef.current);
+      }
+    };
+  }, [visible, projects.length]);
 
   return (
-    <div >
+    <section className="portfolio-area page-section" id="portfolio">
+      <div className="custom-container">
+        <div className="portfolio-content content-width">
+          <div className="section-header">
+            <h4 className="subtitle">
+              <i className="las la-grip-vertical"></i> portfolio
+            </h4>
+            <h1>
+              Featured <span>Projects</span>
+            </h1>
+          </div>
 
-      {/* Project Section */}
-      <section className="portfolio-area page-section scroll-to-page" id="portfolio">
-                    <div className="custom-container">
-                        <div className="portfolio-content content-width">
-                            <div className="section-header">
-                                <h4 className="subtitle scroll-animation" data-animation="fade_from_bottom">
-                                    <i className="las la-grip-vertical"></i> portfolio
-                                </h4>
-                                <h1 className="scroll-animation" data-animation="fade_from_bottom">Featured <span>Projects</span></h1>
-                            </div>
-        
-                            
-                            <div className="row portfolio-items">
-    {projects.map(project => (
-        <div key={project.id} className="col-md-12 scroll-animation" data-animation="fade_from_bottom">
+          <div className="row portfolio-items">
+            {projects.slice(0, visible).map(project => (
+<div key={project.id} className="col-md-12 scroll-animation" data-animation="fade_from_bottom">
             <div className="portfolio-item portfolio-full">
                 <div className="portfolio-item-inner">
                     {project.link !== "#" ? (
@@ -244,21 +256,18 @@ const projects = [
                 </h2>
             </div>
         </div>
-    ))}
-</div>
-                            
-        
-                        </div>
-                    </div>
-                </section>
+            ))}
+          </div>
 
-
-
-      
-
-      {/* Project */}
-      
-    </div>
+          {visible < projects.length && (
+            <div ref={loadMoreRef} className="text-center py-4">
+              <div className="w-8 h-8 border-4 border-gray-300 border-t-sky-500 rounded-full animate-spin mx-auto"></div>
+              <p className="mt-2 text-sm text-gray-500">Loading more...</p>
+            </div>
+          )}
+        </div>
+      </div>
+    </section>
   );
 };
 

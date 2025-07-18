@@ -68,7 +68,7 @@ const skills = [
                             <div className="row skills text-center">
 
                                 {skills.map(skill => (
-                                <div className="col-md-3 scroll-animation" data-animation="fade_from_left">
+                                <div key={skill.id} className="col-md-3 scroll-animation" data-animation="fade_from_left">
                                     <div className="skill">
                                         <div className="skill-inner">
                                             <img src={skill.logo} alt={skill.name} />
