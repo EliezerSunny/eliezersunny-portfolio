@@ -10,7 +10,7 @@ const Introduction = () => {
         "I’m a Software Developer passionate about turning ideas into real-world solutions from school management systems and chat apps to voting platforms and music websites. With Laravel as my core stack, I craft clean, functional, and scalable code that delivers results.",
       category: "Introduction",
       years: "4+",
-      projects: "11",
+      projects: "12",
     },
   ];
 

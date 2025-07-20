@@ -81,9 +81,23 @@ const projects = [
       reviews: 9,
     },
 
-
     {
       id: 6,
+      title: "Sunny YouTube",
+      organization: "EliezerSunny",
+      category: "Web Development",
+      link: "https://sunnyyoutube.vercel.app/",
+      frontend: ["React"],
+      backend: [""],
+      image: "/img/projects/sunnyyoutube.png",
+      description: "Web Development",
+      rating: 5.0,
+      reviews: 9,
+    },
+
+
+    {
+      id: 7,
       title: "Chrisron Wear",
       organization: "EliezerSunny",
       category: "Web Development",
@@ -98,7 +112,7 @@ const projects = [
 
 
     {
-      id: 7,
+      id: 8,
       title: "BSS",
       organization: "EliezerSunny",
       category: "Web Development",
@@ -113,7 +127,7 @@ const projects = [
 
 
     {
-      id: 8,
+      id: 9,
       title: "Jumia React",
       organization: "EliezerSunny",
       category: "Web Development",
@@ -128,7 +142,7 @@ const projects = [
 
 
     {
-      id: 9,
+      id: 10,
       title: "Meme Site",
       organization: "EliezerSunny",
       category: "Web Development",
@@ -146,7 +160,7 @@ const projects = [
 
 
     {
-      id: 10,
+      id: 11,
       title: "News Web App",
       organization: "EliezerSunny",
       category: "Web Development",
@@ -161,7 +175,7 @@ const projects = [
 
 
     {
-      id: 11,
+      id: 12,
       title: "Flight Tracker",
       organization: "EliezerSunny",
       category: "Web Development",
