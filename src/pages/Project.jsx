@@ -57,7 +57,7 @@ const projects = [
       title: "OIM C&S DIVINE HELP (Private)",
       organization: "EliezerSunny",
       category: "Web Development",
-      link: "#",
+      link: "https://divinehelp.pxxl.xyz/",
       frontend: ["Livewire"],
       backend: ["Laravel"],
       image: "/img/projects/divine_help1.png",
