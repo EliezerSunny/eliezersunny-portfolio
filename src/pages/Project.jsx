@@ -7,8 +7,24 @@ const Project = () => {
 
 const projects = [
 
-    {
+    
+
+  {
       id: 1,
+      title: "IvoryBites (Private)",
+      organization: "EliezerSunny",
+      category: "Web Application",
+      link: "https://ivory.elisunny.xyz",
+      frontend: ["Livewire"],
+      backend: ["Laravel"],
+      image: "https://ivory.elisunny.xyz/storage/img/ivory.png",
+      description: "Web Application",
+      rating: 5.0,
+      reviews: 9,
+    },
+  
+   {
+      id: 2,
       title: "Sunny Real ChatApp (Private)",
       organization: "EliezerSunny",
       category: "Web Development",
@@ -23,7 +39,7 @@ const projects = [
 
 
     {
-      id: 2,
+      id: 3,
       title: "Online Voting System",
       organization: "EliezerSunny",
       category: "Web Development",
@@ -38,7 +54,7 @@ const projects = [
 
 
     {
-      id: 3,
+      id: 4,
       title: "Uniabuja Portal",
       organization: "EliezerSunny",
       category: "Web Development",
@@ -53,11 +69,11 @@ const projects = [
 
 
     {
-      id: 4,
+      id: 5,
       title: "OIM C&S DIVINE HELP (Private)",
       organization: "EliezerSunny",
       category: "Web Development",
-      link: "https://divinehelp.pxxl.xyz/",
+      link: "https://divinehelp.elisunny.xyz/",
       frontend: ["Livewire"],
       backend: ["Laravel"],
       image: "/img/projects/divine_help1.png",
@@ -68,11 +84,11 @@ const projects = [
 
 
     {
-      id: 5,
+      id: 6,
       title: "MaxBeatx (Private)",
       organization: "EliezerSunny",
       category: "Web Development",
-      link: "#",
+      link: "https://maxbeat.elisunny.xyz",
       frontend: ["Livewire"],
       backend: ["Laravel"],
       image: "/img/projects/maxbeatx.png",
@@ -82,7 +98,7 @@ const projects = [
     },
 
     {
-      id: 6,
+      id: 7,
       title: "Sunny YouTube",
       organization: "EliezerSunny",
       category: "Web Development",
@@ -97,7 +113,7 @@ const projects = [
 
 
     {
-      id: 7,
+      id: 8,
       title: "Chrisron Wear",
       organization: "EliezerSunny",
       category: "Web Development",
@@ -112,7 +128,7 @@ const projects = [
 
 
     {
-      id: 8,
+      id: 9,
       title: "BSS",
       organization: "EliezerSunny",
       category: "Web Development",
@@ -127,7 +143,7 @@ const projects = [
 
 
     {
-      id: 9,
+      id: 10,
       title: "Jumia React",
       organization: "EliezerSunny",
       category: "Web Development",
@@ -142,7 +158,7 @@ const projects = [
 
 
     {
-      id: 10,
+      id: 11,
       title: "Meme Site",
       organization: "EliezerSunny",
       category: "Web Development",
@@ -160,7 +176,7 @@ const projects = [
 
 
     {
-      id: 11,
+      id: 12,
       title: "News Web App",
       organization: "EliezerSunny",
       category: "Web Development",
@@ -175,7 +191,7 @@ const projects = [
 
 
     {
-      id: 12,
+      id: 13,
       title: "Flight Tracker",
       organization: "EliezerSunny",
       category: "Web Development",
