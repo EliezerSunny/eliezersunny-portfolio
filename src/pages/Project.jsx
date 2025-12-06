@@ -244,7 +244,7 @@ const projects = [
               <i className="las la-grip-vertical"></i> portfolio
             </h4>
             <h1>
-              Featured <span>Projects</span>
+              <span>Projects</span>
             </h1>
           </div>
 
