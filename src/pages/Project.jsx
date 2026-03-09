@@ -11,13 +11,13 @@ const projects = [
 
   {
       id: 1,
-      title: "IvoryBites (Private)",
+      title: "EatNow (Private)",
       organization: "EliezerSunny",
       category: "Web Application",
-      link: "https://ivory.elisunny.xyz",
+      link: "https://eatnow.elisunny.xyz",
       frontend: ["Livewire"],
       backend: ["Laravel"],
-      image: "https://ivory.elisunny.xyz/storage/img/ivory.png",
+      image: "/img/projects/EatNow3.PNG",
       description: "Web Application",
       rating: 5.0,
       reviews: 9,
@@ -58,7 +58,8 @@ const projects = [
       title: "Uniabuja Portal",
       organization: "EliezerSunny",
       category: "Web Development",
-      link: "https://EliezerSunny.github.io/University-of-Abuja-School-Management-System-Laravel-Project/",
+      link: 
+       https://elisunny.xyz,
       frontend: ["Livewire"],
       backend: ["Laravel"],
       image: "/img/projects/student_login.png",
