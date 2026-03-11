@@ -58,7 +58,7 @@ const projects = [
       title: "Uniabuja Portal",
       organization: "EliezerSunny",
       category: "Web Development",
-      link: https://elisunny.xyz,
+      link: "https://elisunny.xyz",
       frontend: ["Livewire"],
       backend: ["Laravel"],
       image: "/img/projects/student_login.png",
